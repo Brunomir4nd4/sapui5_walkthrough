@@ -41,6 +41,10 @@
 				"sap.ui.core": {}
 			}
 		},
+		"contentDensities": {
+		  "compact": true,
+		  "cozy": true
+		},
 		"models": {
 			"i18n": {
 				"type": "sap.ui.model.resource.ResourceModel",
@@ -67,6 +71,38 @@
 					"uri": "css/style.css"
 				}
 			]
+		},
+		"routing": {
+			"config": {
+				"routerClass": "sap.m.routing.Router",
+				"type": "View",
+				"viewType": "XML",
+				"path": "ui5.walkthrough.view",
+				"controlId": "app",
+				"controlAggregation": "pages"
+			},
+			"routes": [
+				{
+				"pattern": "",
+				"name": "overview",
+				"target": "overview"
+				},
+				{
+				"pattern": "detail/{invoicePath}",
+				"name": "detail",
+				"target": "detail"
+				}
+			],
+			"targets": {
+				"overview": {
+				"id": "overview",
+				"name": "Overview"
+				},
+				"detail": {
+				"id": "detail",
+				"name": "Detail"
+				}
+			}
 		}
 	}
 }
