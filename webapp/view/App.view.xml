@@ -5,8 +5,9 @@
 	displayBlock="true"
 >
 	<Shell>
-        <App
-            class="myAppDemoWT"
-            id="app"/>
-    </Shell>
+		<App
+			class="myAppDemoWT"
+			id="app"
+		/>
+	</Shell>
 </mvc:View>

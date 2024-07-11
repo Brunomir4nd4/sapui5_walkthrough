@@ -1,6 +1,8 @@
+/*global QUnit*/
+
 QUnit.config.autostart = false;
 
-sap.ui.require(["sap/ui/core/Core"], async(Core) => {
+sap.ui.require(["sap/ui/core/Core"], async (Core) => {
 	"use strict";
 
 	await Core.ready();

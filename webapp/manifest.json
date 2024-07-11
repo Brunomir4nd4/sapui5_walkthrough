@@ -34,16 +34,16 @@
 		}
 	},
 	"sap.ui5": {
+		"contentDensities": {
+			"compact": true,
+			"cozy": true
+		},
 		"dependencies": {
 			"minUI5Version": "1.108.0",
 			"libs": {
-				"sap.m": {},
-				"sap.ui.core": {}
+				"sap.ui.core": {},
+				"sap.m": {}
 			}
-		},
-		"contentDensities": {
-		  "compact": true,
-		  "cozy": true
 		},
 		"models": {
 			"i18n": {
@@ -83,24 +83,24 @@
 			},
 			"routes": [
 				{
-				"pattern": "",
-				"name": "overview",
-				"target": "overview"
+					"pattern": "",
+					"name": "overview",
+					"target": "overview"
 				},
 				{
-				"pattern": "detail/{invoicePath}",
-				"name": "detail",
-				"target": "detail"
+					"pattern": "detail/{invoicePath}",
+					"name": "detail",
+					"target": "detail"
 				}
 			],
 			"targets": {
 				"overview": {
-				"id": "overview",
-				"name": "Overview"
+					"id": "overview",
+					"name": "Overview"
 				},
 				"detail": {
-				"id": "detail",
-				"name": "Detail"
+					"id": "detail",
+					"name": "Detail"
 				}
 			}
 		}
